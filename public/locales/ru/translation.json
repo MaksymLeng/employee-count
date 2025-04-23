@@ -1,0 +1,16 @@
+{
+  "title": "Учет сотрудников в компании MaksymLeng",
+  "totalEmployees": "Общее число сотрудников: ",
+  "bonusEmployees": "Премию получат: ",
+  "searchPlaceholder": "Найти сотрудника",
+  "allEmployees": "Все сотрудники",
+  "forPromotion": "На повышение",
+  "salaryOver1000": "З/П больше 1000$",
+  "addTitle": "Добавьте нового сотрудника",
+  "namePlaceholder": "Как его зовут?",
+  "salaryPlaceholder": "З/П в $?",
+  "addButton": "Добавить",
+  "language": "Язык",
+  "English": "Английский",
+  "Russian": "Русский"
+}

@@ -1,0 +1,13 @@
+.btn-group-filter,
+.language-btn-group{
+    display: flex;
+    gap: 5px;
+}
+
+.btn-wrapper {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Employee accounting in company MaksymLeng",
+  "totalEmployees": "Total employees: ",
+  "bonusEmployees": "Bonus will receive: ",
+  "searchPlaceholder": "Find an employee",
+  "allEmployees": "All employees",
+  "forPromotion": "For promotion",
+  "salaryOver1000": "Salary over 1000$",
+  "addTitle": "Add a new employee",
+  "namePlaceholder": "What is their name?",
+  "salaryPlaceholder": "Salary in $?",
+  "addButton": "Add",
+  "language": "Language",
+  "English": "English",
+  "Russian": "Russian"
+}
