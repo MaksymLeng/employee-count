@@ -15,7 +15,8 @@ class EmployeesListItem extends Component{
                 <span
                     className="list-group-item-label"
                     onClick={onToggleProp}
-                    data-toggle="raising">{name}</span>
+                    data-toggle="raising"
+                    aria-checked="true">{name}</span>
                 <input
                     type="text"
                     className="list-group-item-input"
