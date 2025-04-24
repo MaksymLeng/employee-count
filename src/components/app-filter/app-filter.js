@@ -30,31 +30,32 @@ class AppFilter extends Component {
     }
 
     languageSwitch = (lng) => {
-        i18n.changeLanguage(lng);
+        i18n.changeLanguage(lng).catch(err => console.log(err));
     }
 
     render() {
         const {btn1, btn2, btn3} = this.state;
+        const getBtnClass = (btnState) => btnState ? "btn btn-light" : "btn btn-outline-light";
         const {t} = this.props;
         return (
             <div className="btn-wrapper">
                 <div className="btn-group-filter">
                     <button
-                        className={btn1 ? "btn btn-light" : "btn btn-outline-light"}
+                        className={getBtnClass(btn1)}
                         type="button"
                         onClick={this.toggleBtn}
                         data-toggle="btn1">
                         {t('allEmployees')}
                     </button>
                     <button
-                        className={btn2 ? "btn btn-light" : "btn btn-outline-light"}
+                        className={getBtnClass(btn2)}
                         type="button"
                         onClick={this.toggleBtn}
                         data-toggle="btn2">
                         {t('forPromotion')}
                     </button>
                     <button
-                        className={btn3 ? "btn btn-light" : "btn btn-outline-light"}
+                        className={getBtnClass(btn3)}
                         type="button"
                         onClick={this.toggleBtn}
                         data-toggle="btn3">
@@ -69,9 +70,23 @@ class AppFilter extends Component {
                             type="button">
                             {t('language')}
                         </button>
-                        <ul className="dropdown-menu dropdown-menu-end shadow-sm rounded" style={{ minWidth: '120px' }}>
-                            <li><button className="dropdown-item py-1 px-2 small" type="button" onClick={() => this.languageSwitch('en')}>{t('English')}</button></li>
-                            <li><button className="dropdown-item py-1 px-2 small" type="button" onClick={() => this.languageSwitch('ru')}>{t('Russian')}</button></li>
+                        <ul className="dropdown-menu dropdown-menu-end shadow-sm rounded"
+                            style={{ minWidth: '120px' }}>
+                            <li>
+                                <button
+                                    className="dropdown-item py-1 px-2 small"
+                                    type="button"
+                                    onClick={() => this.languageSwitch('en')}>
+                                    {t('English')}
+                                </button>
+                            </li>
+                            <li>
+                                <button className="dropdown-item py-1 px-2 small"
+                                        type="button"
+                                        onClick={() => this.languageSwitch('ru')}>
+                                    {t('Russian')}
+                                </button>
+                            </li>
                         </ul>
                 </div>
             </div>

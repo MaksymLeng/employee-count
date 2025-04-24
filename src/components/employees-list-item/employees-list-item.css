@@ -62,3 +62,18 @@
 .list-group-item.increase .btn-star {
     color: #aeaeae;
 }
+
+.custom-focus {
+    display: inline-block;
+    min-width: 200px !important;
+    margin-right: 350px;
+}
+
+@media (max-width: 768px) {
+    .custom-focus {
+        display: block;
+        margin-right: 0;
+        width: 100% !important;
+        min-width: auto !important;
+    }
+}

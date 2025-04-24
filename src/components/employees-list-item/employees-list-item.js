@@ -4,6 +4,8 @@ import {Component} from "react";
 class EmployeesListItem extends Component{
     constructor(props) {
         super(props);
+        this.state = {
+        }
     }
     render() {
         const {name, salary, onDelete, onToggleProp, increase, raising, commitChangeSalary} = this.props;
@@ -13,10 +15,11 @@ class EmployeesListItem extends Component{
         return (
             <li className={classNames}>
                 <span
-                    className="list-group-item-label"
+                    tabIndex="0"
+                    className="list-group-item-label custom-focus"
                     onClick={onToggleProp}
                     data-toggle="raising"
-                    aria-checked="true">{name}</span>
+                    role="button">{name}</span>
                 <input
                     type="text"
                     className="list-group-item-input"
